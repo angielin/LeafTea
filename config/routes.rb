@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/FAQ'
+  get 'welcome/About'
   get 'welcome/Entries'
   get 'welcome/index'
 

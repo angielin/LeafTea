@@ -6,11 +6,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <div class ="icon-bar">
+  <%= link_to "index" ,welcome_index_path %>
+  <%= link_to "Entries" , welcome_Entries_path %>
+  <%= link_to "About" , welcome_About_path %>
+  <%= link_to "FAQ" , welcome_FAQ_path %>
     <%= yield %>
+  </div>
   </body>
 </html>
