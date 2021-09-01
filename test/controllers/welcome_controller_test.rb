@@ -1,8 +1,8 @@
 require "test_helper"
 
 class WelcomeControllerTest < ActionDispatch::IntegrationTest
-  test "should get Entries" do
-    get welcome_Entries_url
+  test "should get FAQ" do
+    get welcome_FAQ_url
     assert_response :success
   end
 end

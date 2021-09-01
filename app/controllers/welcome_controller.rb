@@ -1,4 +1,4 @@
 class WelcomeController < ApplicationController
-  def Entries
+  def index
   end
 end
